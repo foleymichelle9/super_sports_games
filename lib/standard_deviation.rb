@@ -1,5 +1,18 @@
-ages = [24, 30, 18, 20, 41]
+ages = [24.0, 30.0, 18.0, 20.0, 41.0]
 
-# Your code here for calculating the standard deviation
+
+puts ages.sum
+puts ages.count
+puts average = (ages.sum / ages.count)
+
+new_array = []
+ages.each do |number|
+  new_array << (number - average).round(1)
+end
+
+print new_array
+
+puts 
+
 
 # When you find the standard deviation, print it out
